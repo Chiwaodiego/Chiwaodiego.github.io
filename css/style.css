@@ -5,7 +5,44 @@
 }
 
 body {
-	width: 100vw;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.container__1 {
+	width: 80vw;
+	height: 100%;
+	display: flex;
+	flex-flow: column ;
+}
+
+.container__2 {
+
+	width: 20vw;
+	height: 100%;
+	display: flex;
+}
+nav {
+	position: fixed;
+	background: #f00;
+	width: 20vw;
 	height: 100vh;
 }
 
+header {
+	background: #55a;
+	width:100px;
+	height: 100px;
+}
+section {
+	background:#0f0;
+	width: 80vw;
+	height: 2000px;
+}
+footer {
+	background:#0ff;
+	width: 80vw;
+	height: 50px;
+}
