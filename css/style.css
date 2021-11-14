@@ -4,12 +4,15 @@
 	margin:0;
 }
 
+@font-face {font-family: "ITC Benguiat"; 
+	src: url("@font-face/3f4943f4e662577a8113309f864540a4.woff2"); 
+}
 body {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-direction: row;
-	
+	font-family: "ITC Benguiat" , 'serif' ;
 }
 /*contenedor 
 .container__1 {
@@ -21,20 +24,49 @@ body {
 /* cotenedor menu desplegable*/
 
 nav.sidebar {
-	width: 50px;
+	
+	width: 30px;
 	height: 100%;
-	display: inline-block;
+	display: block;
+	position: relative;
+
 
 }
+/*caja de cotension de espacio ver bug*/
+.box__sidebar {
+	width: 30px;
+	height: 100%;
+	display: block;
+	position: relative;
+}
 
-.sidebar__menu-buttom {
+/*menu deslisante*/
+#menu {
 
 	background: #f00;
-	width: 50px;
+	width: 100px;
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	position: fixed;
+	z-index: 200;
+	left: -70px;
+}
+#menu.active {
+	left:0;
+}
+
+/* texto del menu*/
+.sidebar__menu {
+	width: 70px;
+	height: 100vh;
+	background: #F1F;
+}
+
+.sidebar__buttom{
+	width: 30px;
+	height: 100vh;
+	background: #0af;
 }
 
 /*cotenedor header,section,footer*/
@@ -43,7 +75,11 @@ nav.sidebar {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+
 }
+
+
+
 /*titulo de presentacion*/
 
 
@@ -51,6 +87,8 @@ header {
 	background: #55a;
 	width:100%;
 	height: 100px;
+	text-align: center;
+
 }
 
 /* cuerpo general*/
