@@ -63,7 +63,31 @@ nav.sidebar , .box__sidebar {
 .sidebar__menu {
 	width: 250px;
 	height: 100vh;
-	background: var(--black-main1);
+	background: url(../img/Nierbackgroundblack1.png) no-repeat ;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+}
+.sidebar__menu img {
+	padding-top: 5vh;
+	align-self: center;
+	width: 15vh;
+	height: 15vh;
+}
+
+.sidebar__menu ul li {
+	padding: 2vh 0vw;
+	text-align: center;
+	border-bottom: 2px solid #000;
+
+}
+.sidebar__menu ul li a {
+
+	font-size: 20px;
+	line-height: 50px;
+	color: #fff;
+	text-decoration: none;
+
 }
 
 .sidebar__buttom{
@@ -71,6 +95,7 @@ nav.sidebar , .box__sidebar {
 	height: 100vh;
 	background: var(--brow-grey-light);
 }
+
 
 /*cotenedor header,section,footer*/
 .container__1 {
@@ -126,8 +151,8 @@ section {
 }
 .main1__img img{
 
-	width: 200px;
-	height: 200px;
+	width: 220px;
+	height: 220px;
 	clip-path: circle(50% at 50% 50%);
 	position: relative;
 }
@@ -152,7 +177,7 @@ section {
 	letter-spacing: 1px;
 }
 
-
+/* skills*/
 .main2 {
 	background: url(../img/NierbackgroundH.png) no-repeat center ;
 	background-size: 100% 100%;
@@ -181,9 +206,7 @@ section {
 	height: 150px;
 }
 
-
-
-
+/*repositorio*/
 
 .main3 {
 	background: url(../img/NierbackgroundHinvert.png) no-repeat center ;
