@@ -47,13 +47,13 @@ nav.sidebar , .box__sidebar {
 
 /*menu deslisante*/
 #menu {
-	width: 250px;
+	width: 350px;
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	position: fixed;
 	z-index: 200;
-	left: -200px;
+	left: -250px;
 }
 #menu.active {
 	left:0;
@@ -61,7 +61,7 @@ nav.sidebar , .box__sidebar {
 
 /* texto del menu*/
 .sidebar__menu {
-	width: 200px;
+	width: 250px;
 	height: 100vh;
 	background: var(--black-main1);
 }
