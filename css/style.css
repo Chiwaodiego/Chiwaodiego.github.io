@@ -204,7 +204,7 @@ section {
 	animation-duration: 2s;
 	padding:5vh 0;
 	text-align: center;
-	font-size: 25px;
+	font-size: 1.5em;
 	letter-spacing: 2px;
 	color: #000;
 	transition: 2s;
@@ -214,8 +214,8 @@ section {
 .me {
 	animation: slideInLeft;
 	animation-duration: 2s;
-	font-size: 20px;
-	width: 85vw;
+	font-size: 1em;
+	width: 70vw;
 	text-align: center;
 	letter-spacing: 1px;
 }
@@ -235,7 +235,7 @@ section {
 		padding-bottom: 5vh;
 }
 .main2__skills h2 {
-	font-size: 40px;
+	font-size: 3em;
 	letter-spacing: 2px;
 
 }
@@ -244,7 +244,7 @@ section {
 
 .main2__icons {
 	display: flex;
-	flex-flow: column;
+	flex-direction: column;
 }
 
 .main2__icons img {
@@ -266,14 +266,22 @@ section {
 }
 
 .main3__text {
+	width: 80vw;
+	text-align: center;
 	letter-spacing: 3px;
-	font-size: 22px;
-	padding-bottom: 15vh;
+	font-size: 2em;
+	padding-bottom: 5vh;
 
 }
 .main3__logo{
 	align-self: center;
 }
+.main3__logo img {
+	align-self: center;
+	width: 40vh;
+	height: 40vh
+}
+
 
 
 /*copyright*/
@@ -292,30 +300,36 @@ footer img {
 	height: 40px;
 }
 
+/*version tablet y escritorio*/
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 550px) and (max-width:1023px)
+{
 
+.main1__img {
+	padding-top:40px;
+	padding-bottom: 5px;
+	width: 40vh;
+	height: 40vh;
+
+}
 .main1__img img{
 
-	width: 130px;
-	height: 130px;
+	width: 40vh;
+	height: 40vh;
+	max-width: 220px;
+	max-height:220px;
 }
-.main1__img {
-	padding-top:10vh;
-	width: 130px;
-	height: 130px;
 
-}
 .about{
-	padding:0 0;
+	padding:2vh 0;
+	font-size: 1.5rem;	
 }
 .me {
-	animation: slideInLeft;
-	animation-duration: 2s;
-	font-size: 20px;
-	width: 85vw;
+	width: 90vw;
+	font-size: 1em;
 	text-align: center;
 	letter-spacing: 1px;
+	max-width: 650px;
 }
 
 
@@ -323,7 +337,52 @@ footer img {
 /*skills*/
 .main2__icons {
 	display: flex;
-	flex-flow: row;
+	flex-direction: row;
+}
+
+
+}
+
+@media screen and (min-width: 1023px ) {
+
+	.main1__img {
+	padding-top:40px;
+	padding-bottom: 3px;
+	width: 40vh;
+	height: 40vh;
+
+}
+.main1__img img{
+
+	width: 40vh;
+	height: 40vh;
+	max-width: 220px;
+	max-height:220px;
+}
+
+.about{
+	padding:1vh 0;
+	font-size: 2em;	
+}
+.me {
+	width: 90vw;
+	font-size: 1.8em;
+	text-align: center;
+	letter-spacing: 1px;
+	max-width: 650px;
+}
+
+
+
+/*skills*/
+.main2__icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.main2__icons img {
+	width: 40vh;
+	height: 40vh;
 }
 
 
