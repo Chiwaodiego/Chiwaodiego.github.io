@@ -54,7 +54,7 @@ nav.sidebar , .box__sidebar {
 	position: fixed;
 	z-index: 200;
 	left: -250px;
-	transition: 1.7s all;
+	transition: 1.5s;
 }
 #menu.active {
 	left:0;
@@ -69,31 +69,44 @@ nav.sidebar , .box__sidebar {
 	display: flex;
 	flex-direction: column;
 }
-.sidebar__menu img {
+
+
+#flipicon {
+	align-self: center;
+
+}
+#flipicon.active {
+	animation: flip;
+	animation-delay: .7s;
+	animation-duration:2s;
+}
+
+.sidebar__logo img {
 	padding-top: 5vh;
 	align-self: center;
 	width: 15vh;
 	height: 15vh;
+
 }
 
-.sidebar__menu ul li {
+.menu__text ul li {
 	padding: 1vh 0vw;
 	text-align: center;
 	border-bottom: 2px solid var(--brow-grey-light);
-
 }
-.sidebar__menu ul li a {
+.menu__text ul li a {
 
 	font-size: 20px;
 	line-height: 50px;
 	color: #fff;
 	text-decoration: none;
+}
+.menu__text a:hover {
+	color: var(--brown-ligth-m1);
+	transition: 0.5s
 
 }
-.sidebar__menu ul li a:focus {
-	color: #000;
 
-}
 
 .sidebar__buttom{
 	width: 50px;
@@ -125,14 +138,13 @@ nav.sidebar , .box__sidebar {
 
 
 header {
-	background: var(--black-main1);
+	background: var(--grey-border);
 	width:100%;
 	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 		z-index: 90;
-
 }
 header p {
 	animation: slideInDown;
@@ -140,10 +152,7 @@ header p {
 	color: #fff;
 	font-size: 30px;
 	letter-spacing: 3px;
-
 	text-align:center;
-
-
 
 }
 
@@ -218,7 +227,7 @@ section {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	flex-direction: column;
+	flex-flow: column; 
 	justify-content: center;
 	align-items: center;
 }
@@ -230,6 +239,9 @@ section {
 	letter-spacing: 2px;
 
 }
+
+
+
 .main2__icons {
 	display: flex;
 	flex-flow: column;
@@ -266,7 +278,7 @@ section {
 
 /*copyright*/
 footer {
-	background: var(--black-main1) ;
+	background: var(--brown-grey-border) ;
 	background-size: 100% 100%;
 	width: 100%;
 	height: 60px;
@@ -280,3 +292,41 @@ footer img {
 	height: 40px;
 }
 
+
+@media screen and (min-width: 480px){
+
+.main1__img img{
+
+	width: 130px;
+	height: 130px;
+}
+.main1__img {
+	padding-top:10vh;
+	width: 130px;
+	height: 130px;
+
+}
+.about{
+	padding:0 0;
+}
+.me {
+	animation: slideInLeft;
+	animation-duration: 2s;
+	font-size: 20px;
+	width: 85vw;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+
+/*skills*/
+.main2__icons {
+	display: flex;
+	flex-flow: row;
+}
+
+
+
+
+}
