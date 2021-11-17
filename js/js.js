@@ -9,10 +9,7 @@ flip.addEventListener('click',function(){
 })
 
 
-const flip = document.querySelector('.sidebar__buttom');
-flip.addEventListener('click',function(){
-	document.getElementById('menu_textslide').classList.toggle('active');
-})
+
 
 
 
