@@ -12,5 +12,3 @@ flip.addEventListener('click',function(){
 
 
 
-
-
