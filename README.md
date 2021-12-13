@@ -1,2 +1,3 @@
 # Chiwaodiego.github.io
-Pag personal nier
+My personal page, style Nier
+https://chiwaodiego.github.io/
